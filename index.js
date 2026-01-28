@@ -9,7 +9,7 @@ app.use(express.json());
 app.use(cookieParser());
 app.use(
   cors({
-    origin: "http://localhost:5173", // your Vite frontend
+    origin: "https://digital-diary-git-main-shivaansh32s-projects.vercel.app", // your Vite frontend
     credentials: true,
   })
 );
