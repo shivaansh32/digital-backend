@@ -22,6 +22,8 @@ app.get('/',(req,res)=>{
 app.use('/auth',authroute);
 app.use('/note',noteroute);
 
-app.listen(3000 , ()=>{
-    console.log("the serve is running");
+const PORT = process.env.PORT || 3000;
+
+app.listen(PORT, () => {
+  console.log(`Server running on port ${PORT}`);
 });
